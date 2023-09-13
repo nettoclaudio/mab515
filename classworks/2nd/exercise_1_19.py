@@ -22,7 +22,7 @@ def mean(numbers: [int]) -> float:
     return sum(numbers) / len(numbers)
 
 def variance(numbers: [int]) -> float:
-    _mean: [int] = mean(numbers)
+    _mean: float = mean(numbers)
 
     return sum(map(lambda x: (x - _mean) ** 2, numbers)) / len(numbers)
 
